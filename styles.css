@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #0a0a0a;
+  perspective: 1500px;
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100');
+
+div.face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: pink;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Mono';
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+div.cover {
+  width: 250px;
+  height: 300px;
+  transform: translateX(-50%) translateY(-50%) translateZ(75px);
+}
+
+div.side {
+  width: 150px;
+  height: 300px;
+  transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(125px);
+}
+
+div.spine {
+  width: 150px;
+  height: 300px;
+  transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(125px);
+}
+
+div.top {
+  width: 250px;
+  height: 150px;
+  transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(150px);
+}
+
+div.bottom {
+  width: 250px;
+  height: 150px;
+  transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(150px);
+}
+
+div.back {
+  width: 250px;
+  height: 300px;
+  transform: translateX(-50%) translateY(-50%) rotateY(180deg) translateZ(75px);
+}
